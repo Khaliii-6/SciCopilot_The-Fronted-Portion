@@ -930,17 +930,17 @@ Desktop: > 1024px   → Full three-column layout
 ```mermaid
 flowchart TD
     subgraph Stores["Zustand Stores"]
-        Auth["authStore<br/>用户认证"]
-        Chat["chatStore<br/>对话状态"]
-        Paper["paperStore<br/>论文状态"]
-        UI["uiStore<br/>UI 状态"]
+        Auth["authStore - 用户认证"]
+        Chat["chatStore - 对话状态"]
+        Paper["paperStore - 论文状态"]
+        UI["uiStore - UI 状态"]
     end
 
     subgraph Components["React Components"]
-        C1["<Header />"]
-        C2["<ChatBubble />"]
-        C3["<DeepReadReport />"]
-        C4["<Sidebar />"]
+        C1["Header"]
+        C2["ChatBubble"]
+        C3["DeepReadReport"]
+        C4["Sidebar"]
     end
 
     Auth --> C1
